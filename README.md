@@ -1,7 +1,7 @@
 # AaC-VSCode
 A VS Code extension with supporting AaC language plugins.
 
-**UNDER HEAVY REFACTORING**
+**UNDER HEAVY REFACTORING** - 
 We're in the process of refactoring the VS Code extension and related AaC plugins out of the main repo and into this repo.
 Nothing currently works, and may not for some time.  Please be patient as we rework on internal API updates.
 
