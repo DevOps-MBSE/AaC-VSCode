@@ -1,0 +1,40 @@
+plugin:
+  name: LSP Server
+  package: aac_vscode.plugins.lsp_server
+  description: An AaC plugin that can be used to start the AaC LSP server.
+  commands:
+    - name: start-lsp-io
+      help_text: Start the AaC Language Server Protocol (LSP) server in IO mode.
+      acceptance:
+        - name: Ensure the LSP server starts in IO mode.
+          scenarios:
+            - name: Start the LSP server in IO mode.
+              given:
+                - The LSP server is not currently running.
+              when:
+                - The aac application is run with the start-lsp-io command.
+              then:
+                - The AaC LSP server is started in IO mode.
+                - Messages to and from the LSP occur over system IO.
+    - name: start-lsp-tcp
+      help_text: Start the AaC Language Server Protocol (LSP) server in TCP mode.
+      input:
+        - name: --host
+          type: string
+          description: The host address to which the TCP server will be bound.
+          default: 127.0.0.1
+        - name: --port
+          type: number
+          description: The host port to which the TCP server will be bound.
+          default: 5007
+      acceptance:
+        - name: Ensure the LSP server starts in TCP mode.
+          scenarios:
+            - name: Start the LSP server in TCP mode.
+              given:
+                - The LSP server is not currently running.
+              when:
+                - The aac application is run with the start-lsp-tcp command.
+              then:
+                - The AaC LSP server is started in TCP mode.
+                - Messages to and from the LSP occur over a TCP connection.

@@ -1,0 +1,4 @@
+project:
+  name: AaC-VSCode
+  description:  |
+    VS Code plugin for Architecture-as-Code
