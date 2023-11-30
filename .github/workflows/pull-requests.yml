@@ -1,8 +1,9 @@
 # This workflow is intended to run for ANY pull request
 name: Pull Request Workflow
 
-on:
-  pull_request:
+# Commenting out till we have a task for cleaning up workflows appropriately for the new repo
+# on:
+#   pull_request:
 
 jobs:
   build_python_artifacts:

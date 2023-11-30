@@ -1,9 +1,10 @@
 # This workflow is only intended to run when a pull-request is merged into the main branch
 name: Main branch Workflow
 
-on:
-  push:
-    branches: [main]
+# Commenting out till we have a task for cleaning up workflows appropriately for the new repo
+# on:
+#   push:
+#     branches: [main]
 
 jobs:
   build_python_artifacts:
