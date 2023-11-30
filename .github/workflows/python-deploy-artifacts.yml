@@ -2,6 +2,7 @@ name: Deploy Python Artifacts
 
 on:
   workflow_dispatch:
+  # Commenting out till we have a task for cleaning up workflows appropriately for the new repo
   # push:
   #   branches:
   #     - main
