@@ -4,9 +4,6 @@ title: "📋 [TASK] - <title>"
 labels: [ 
   "enhancement"
 ]
-projects: [
-  "DevOps-MBSE/AaC"
-]
 body:
   - type: input
     id: parent_feature

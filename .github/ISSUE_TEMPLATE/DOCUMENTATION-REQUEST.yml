@@ -4,9 +4,6 @@ title: "✏️📘 [Documentation] - <title>"
 labels: [
   "documentation"
 ]
-projects: [
-  "DevOps-MBSE/AaC"
-]
 body:
   - type: checkboxes
     id: doc-types

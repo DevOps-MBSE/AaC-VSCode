@@ -4,9 +4,6 @@ title: "🐛 [BUG] - <title>"
 labels: [
   "bug"
 ]
-projects: [
-  "DevOps-MBSE/AaC"
-]
 body:
   - type: checkboxes
     id: pre-requistes
@@ -21,8 +18,8 @@ body:
   - type: input
     id: version-pre-req
     attributes:
-      label: "What version of the AaC package are you using? Check your version with the command: aac version."
-      placeholder: i.e. 0.1.7
+      label: "What version of the AaC VSCode Extension are you using? Check your version by viewing the Extension landing page in VSCode."
+      placeholder: i.e. 0.0.2
     validations:
       required: true
   - type: textarea

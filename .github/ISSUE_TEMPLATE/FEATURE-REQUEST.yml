@@ -5,9 +5,6 @@ labels: [
   "question", 
   "enhancement"
 ]
-projects: [
-  "DevOps-MBSE/AaC"
-]
 body:
   - type: textarea
     id: reference_issues
